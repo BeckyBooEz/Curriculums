@@ -3,15 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 0.5rem;
 }
@@ -21,6 +23,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .perfil {
@@ -28,28 +31,28 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0.9rem;
+  justify-content: space-evenly;
+  padding: 0.5rem;
   border: 2px solid rgb(0, 0, 0);
 }
 
+.perfil-img {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
 .perfil-img img {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px;
   object-fit: cover;
 }
 
 .perfil-text {
   text-align: center;
-  margin-top: 0.5rem;
-}
-
-.perfil-text h1 {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.perfil-text h2 {
-  font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 
@@ -64,9 +67,8 @@ header {
 }
 
 .perfil-nav nav button {
-  padding: 0.2rem;
-  margin: 0.2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: .5rem;
 }
 
 .perfil-contacto {
@@ -92,10 +94,6 @@ header {
   margin-top: 0.5rem;
 }
 
-.perfil-redes h3 {
-  margin-top: 0.5rem;
-}
-
 .perfil-redes ul {
   display: flex;
   margin-top: 0.5rem;
@@ -105,7 +103,7 @@ header {
 
 main {
   grid-column: span 3;
-  height: 100%;
+  height: 1064px;
 }
 
 .contenido {
@@ -123,8 +121,27 @@ main {
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
-  padding: 1rem 2rem;
-  text-align: justify;
+  margin-top: 1rem;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido section h3{
+  font-size: clamp(1.5rem, 1rem + 5vw, 2rem);
+}
+
+.contenido section p {
+  font-size: clamp(1.5rem, 1rem + 3vw, 1.9rem);
+}
+
+.contenido section ul {
+  list-style: square;
+}
+
+.contenido section ul li {
+  font-size: clamp(1.5rem, 1rem + 5vw, 2rem);
 }
 
 .indicadores {
@@ -149,9 +166,4 @@ main {
 
 .indicadores button.activo {
   background: #333;
-}
-
-.contenido section ul {
-  list-style: square;
-  margin-top: 0.5rem;
 }
