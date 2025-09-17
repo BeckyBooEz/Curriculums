@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -33,7 +32,8 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0.5rem;
-  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px 20px;
+  background-color: #EEC3CC;
 }
 
 .perfil-img {
@@ -54,6 +54,17 @@ header {
 .perfil-text {
   text-align: center;
   margin-top: 0.5rem;
+  color: #EEC3CC;
+  background-color: #B56976;
+  border-radius: 10px 10px;
+}
+
+.perfil-text h1 {
+  color: #EEC3CC;
+}
+
+.perfil-text h2 {
+  color: #d4b3b9;
 }
 
 .perfil-nav {
