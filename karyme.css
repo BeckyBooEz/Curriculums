@@ -15,6 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 0.5rem;
+  background-color: #f2d1d6;
 }
 
 header {
@@ -34,6 +35,7 @@ header {
   padding: 0.5rem;
   border-radius: 20px 20px;
   background-color: #EEC3CC;
+  box-shadow: #333 0px 4px 8px;
 }
 
 .perfil-img {
@@ -42,6 +44,8 @@ header {
   height: 40%;
   justify-content: center;
   padding: 0.5rem;
+  background-color: #D9ABB5;
+  border-radius: 10px 10px;
 }
 
 .perfil-img img {
@@ -49,6 +53,7 @@ header {
   height: 100%;
   border-radius: 20px 20px;
   object-fit: cover;
+  box-shadow: #333 0px 4px 8px;
 }
 
 .perfil-text {
@@ -78,8 +83,21 @@ header {
 }
 
 .perfil-nav nav button {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: .5rem;
+  display: flex;
+  padding: 1rem;
+  background-color: #B56976;
+  color: #d4b3b9;
+  border: none;
+  border-radius: 5px 5px;
+}
+
+.perfil-nav nav button:hover {
+  background-color: #EEC3CC;
+  color: #B56976;
+  cursor: pointer;
+  box-shadow: #333 0px 4px 8px;
 }
 
 .perfil-contacto {
